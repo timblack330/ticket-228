@@ -1,0 +1,203 @@
+/* DÃ©claration de la police */
+@font-face {
+   font-family: "Teko";
+   src: url('fonts/Teko/Teko-Regular.ttf');
+   }
+    
+   /* DÃ©claration de la police version "gras" */
+   @font-face {
+   font-family: "Teko-bold";
+   font-weight: bold;
+   src: url('fonts/Teko/Teko-Bold.ttf');}
+
+*{
+    font-family:Teko;
+    font-size: 22px;
+ }
+ body{
+    
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(0,106,77,0.9)), url("background.jpg");
+    background-attachment:fixed;
+    background-size: cover;
+ }
+ 
+ img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+ }
+
+ #welcome{
+    width: 30%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+ }
+ 
+ 
+ .logo{
+ 
+     margin-bottom: 0px;
+     max-width: 200px;
+     max-height: 200px;
+     overflow: hidden;
+     position: fixed;
+ }
+ .actions{
+    max-width: 200px;
+     
+     overflow: hidden;
+     float: right;
+     margin: 5px;
+     width: 200px;
+     position: fixed;
+ }
+ #preview{
+   max-height: 100px;
+   width: auto;
+    overflow: scroll;
+    
+    margin: 5px;
+    
+    
+}
+ .affiche{
+ 
+ margin-bottom: 0px;
+ max-width: 500px;
+ max-height: 500px;
+ overflow: hidden;
+}
+ 
+ 
+  
+ .msg{
+    background-color: rgba(255,255,0,0.5);
+    padding: 10px;
+border: 1px solid black;
+border-radius: 3px;
+max-width: 500px;
+    
+    margin-left: auto;
+    margin-right: auto;
+ }
+ span{
+    font-weight: bold;
+ }
+ .button {
+display: inline-block;
+padding: 3px;
+
+cursor: pointer;
+text-align: center;  
+text-decoration: none;
+outline: none;
+color: #fff;
+background-color: rgba(0,106,77,0.9);
+border: none;
+border-radius: 5px;
+box-shadow: 0 2px #999;
+}
+
+.button:hover {background-color: #5aa899;
+color: #fff;}
+
+.button:active {
+background-color: #3e8e41;
+box-shadow: 0 5px #666;
+transform: translateY(2px);
+}
+
+ input,button{
+    border:solid 1px rgba(0,106,77,1);
+    margin-bottom:10px;
+    padding: 5px;
+    outline:none;
+    border-radius:6px;
+ }
+ .erreur{
+    color:#CC0000;
+    margin-bottom:10px;
+ }
+
+button {
+display: inline-block;
+padding: 3px;
+
+cursor: pointer;
+text-align: center;  
+text-decoration: none;
+outline: none;
+color: #fff;
+background-color: rgba(0,106,77,0.9);
+border: none;
+border-radius: 5px;
+box-shadow: 0 2px #999;
+}
+
+button:hover {background-color: #5aa899;
+color: #fff;}
+
+button:active {
+background-color: #3e8e41;
+box-shadow: 0 5px #666;
+transform: translateY(2px);
+}
+
+.form {
+    position: absolute; /* postulat de dÃ©part */
+    top: 50%; left: 50%; /* Ã  50%/50% du parent rÃ©fÃ©rent */
+    transform: translate(-50%, -50%); /* dÃ©calage de 50% de sa propre taille */
+    
+  }
+
+  .form2 {
+    position: absolute; /* postulat de dÃ©part */
+    top: 70%; left: 50%; /* Ã  50%/50% du parent rÃ©fÃ©rent */
+    transform: translate(-50%, -50%); /* dÃ©calage de 50% de sa propre taille */
+    
+  }
+
+table{
+    background-color: rgba(255,255,0,0.5);
+    padding: 10px;
+border: 1px solid black;
+border-radius: 3px;
+
+overflow: scroll;
+    
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+  #table1{
+   max-height: 80%;
+  }
+
+  #table2{
+   display:block;
+   
+   max-height: 200px;
+   
+  }
+
+  
+
+
+  h1{
+     position: absolute;
+     left: 50%;
+     transform: translate(-50%);
+  }
+  .actions{
+              max-width: 200px;
+               
+               overflow: hidden;
+               float: right;
+               margin: 5px;
+               width: 200px;
+               position: fixed;
+               margin-top: 10%;
+           }
+

@@ -50,17 +50,17 @@
         
     <p>
     <div class="actions">
-        L'evenement <span><?php echo $nom ?></span> se deroulera du <?php echo $date_debut  ?> au <?php echo $date_fin ?> entre <?php echo $heure_debut ?> et <?php echo $heure_fin ?> Statut: <?php echo $adulte; ?><br>
-        Entrée : <span><?php echo $prix ?></span>FCFA <a class="button"href="reserver.php?id_evenement=<?php echo $_GET['id_evenement'] ?>">Reserver un ticket</a><br><br><a class='button' href="<?php echo $localisation ?>" target='_blank'>Localisation</a><br><br>
-        <?php if($max_stand>0)echo "Stand : <span> $prix_stand </span>FCFA <a class='button' href='reserver_stand.php?id_evenement=".$_GET['id_evenement']." '>Reserver un stand</a>"?>
+        L'evenement <span><?php /*echo $nom */?></span> se deroulera du <?php /*echo $date_debut */ ?> au <?php /*echo $date_fin*/ ?> entre <?php /*echo $heure_debut */?> et <?php /*echo $heure_fin*/ ?> Statut: <?php/* echo $adulte;*/ ?><br>
+        Entrée : <span><?php /*echo $prix */?></span>FCFA <a class="button"href="reserver.php?id_evenement=<?php /*echo $_GET['id_evenement'] */?>">Reserver un ticket</a><br><br><a class='button' href="<?php /*echo $localisation */?>" target='_blank'>Localisation</a><br><br>
+        <?php /*if($max_stand>0)echo "Stand : <span> $prix_stand </span>FCFA <a class='button' href='reserver_stand.php?id_evenement=".$_GET['id_evenement']." '>Reserver un stand</a>"*/?>
         <a class="button" href=" index.php">Retour</a>
       </div><div class="form2">
     <img src="affiches/<?php echo $id_affiche; ?>"/><br>
-    <?php echo $description; ?> <?php echo "<br><tr><td>".$likes."<a class='button' href='like.php?id_evenement=".$_GET['id_evenement']."&t=like'>❤</a>".
+    <?php /*echo $description; */?> <?php /*echo "<br><tr><td>".$likes."<a class='button' href='like.php?id_evenement=".$_GET['id_evenement']."&t=like'>❤</a>".
      "</td><td>".$dislikes."<a class='button' href='like.php?id_evenement=".$_GET['id_evenement']."&t=dislike'>💔</a></td></tr>"; ?><br>
     
     
-<?php 
+<?php /*
 
    echo "<table id='table2'><caption>".$nbr." Commentaires</caption>";
    
@@ -72,7 +72,7 @@
   }
   echo "</tbody></table>";
 
-  
+  */
 ?>
     
     
@@ -80,9 +80,9 @@
     <input type="text" name=commentaire placeholder="Votre commentaire"/><input class="button" type="submit" value="envoyer">
     
     </form>
-    <?php if($id_utilisateur==$createur){
+    <?php /*if($id_utilisateur==$createur){
     echo "<a class='button'href = 'liste_reservations.php?id_evenement=".$id_evenement."'>Liste reservations</a>";
-  } ?>
+  } */?>
     
    
     

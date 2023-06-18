@@ -1,10 +1,12 @@
-<?php
+<?php/*
    session_start();
    
-?>
+*/?>
 <!DOCTYPE html>
 <html>
    <head>
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <script type="js/bootstrap.js"></script>
       <meta charset="utf-8" />
       <style>
         
@@ -25,7 +27,7 @@ border: thin solid #6495ed;}
 <input class="button" type = "button" value = "Retour"  onclick = "history.back()"> </form> </div>
         
    
-         <?php  
+         <?php  /*
       include("connexionbd.php");
         
       $reponse = $pdo->query("Select * from reservations where id_utilisateur='".$_SESSION['id']."'");
@@ -53,7 +55,7 @@ border: thin solid #6495ed;}
          echo "<h2>Aucune reservation</h2>";
        }
 
-      ?>
+     */ ?>
      
    
    </body>

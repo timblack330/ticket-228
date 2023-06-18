@@ -36,6 +36,8 @@
    <head>
       <meta charset="utf-8" />
       <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <script type="js/bootstrap.js"></script>
    </head>
    <body>
    <div class="logo"><img src="logo.png"></div>

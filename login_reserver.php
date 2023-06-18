@@ -1,4 +1,4 @@
-<?php
+<?php/*
    session_start();
    if(isset($_GET['redirect'])){
       header("location:login_reserver.php");
@@ -29,10 +29,12 @@
    }
 
    
-?>
+*/?>
 <!DOCTYPE html>
 <html>
    <head>
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <script type="js/bootstrap.js"></script>
       <meta charset="utf-8" />
       <link rel="stylesheet" href="style.css" />
    </head>

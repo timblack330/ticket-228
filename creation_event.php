@@ -1,4 +1,4 @@
-<?php
+<?php/*
    session_start();
    
    if($_SESSION["autoriser"]!="oui"){
@@ -67,7 +67,7 @@
      
       
    
-?>
+*/?>
 <!DOCTYPE html>
 <html>
    <head>
@@ -82,9 +82,9 @@
       <div class="form2">
       <div class="erreur"><?php echo $erreur ?></div>
       <form name="fo" method="post" action="" enctype="multipart/form-data">
-         <input type="text" name="nom" placeholder="Nom" value="<?php echo $nom?>" /><br />
-         <input type="textarea" name="description" placeholder="Faites une brève description de votre evenement." value="<?php echo $description_evenement?>" /><br />
-         <input type="text" name="createur" value="créé par <?php echo $createur?>" disabled/><br />
+         <input type="text" name="nom" placeholder="Nom" value="<?php /*echo*/ $nom?>" /><br />
+         <input type="textarea" name="description" placeholder="Faites une brève description de votre evenement." value="<?php /*echo $description_evenement*/?>" /><br />
+         <input type="text" name="createur" value="créé par <?php /*echo $createur*/?>" disabled/><br />
          <p>Cet evenement est il reserve aux adultes?</p>
          <label for="oui">Oui</label>
          <input type="radio" name="adulte"  value="oui" id="oui" />
@@ -98,28 +98,28 @@
          
          <label for="date_debut">Date debut</label>
 
-<input type="date" name="date_debut" id="date_debut" min="today()" value="<?php echo $date_debut?>"
+<input type="date" name="date_debut" id="date_debut" min="today()" value="<?php /*echo $date_debut*/?>"
        >
          <br />
          <label for="date_fin">Date fin</label>
 
-<input type="date" name="date_fin" id="date_fin" value="<?php echo $date_fin?>"
+<input type="date" name="date_fin" id="date_fin" value="<?php /*echo $date_fin*/?>"
        >
          <br />
  
     
     <label for="heure_debut">Heure de debut</label>
-         <input type="time" name="heure_debut" id="heure_debut" value="<?php echo $heure_debut?>"/><br />
+         <input type="time" name="heure_debut" id="heure_debut" value="<?php /*echo $heure_debut*/?>"/><br />
          <label for="heure_debut">Heure de fin</label>
-         <input type="time" name="heure_fin" id="heure_fin" value="<?php echo $heure_fin?>" /><br />
+         <input type="time" name="heure_fin" id="heure_fin" value="<?php /*echo $heure_fin*/?>" /><br />
          <label for="localisation">Localisation(lien)</label>
-         <input type="text" name="localisation" placeholder="localisation(sous forme de lien)" value="<?php echo $localisation?>" id="localisation"/><br />
+         <input type="text" name="localisation" placeholder="localisation(sous forme de lien)" value="<?php /*echo $localisation*/?>" id="localisation"/><br />
          <label for="prix">Prix d'entrée en FCFA</label>
-         <input type="int" name="prix" placeholder="ex: 2000" id="prix" value="<?php echo $prix?>" /><br />
+         <input type="int" name="prix" placeholder="ex: 2000" id="prix" value="<?php/* echo $prix*/?>" /><br />
          <label for="nbr_stand">Nombre de stands</label>
-         <input type="int" name="nbr_stand" placeholder="ex: 20" id="nbr_stand" value="<?php echo $nbr_stand?>" /><br />
+         <input type="int" name="nbr_stand" placeholder="ex: 20" id="nbr_stand" value="<?php/* echo $nbr_stand*/?>" /><br />
          <label for="nbr_stand">Prix du stand</label>
-         <input type="int" name="prix_stand" placeholder="ex: 2000" id="prix_stand" value="<?php echo $prix_stand?>" /><br />
+         <input type="int" name="prix_stand" placeholder="ex: 2000" id="prix_stand" value="<?php /*echo $prix_stand*/?>" /><br />
          <input class="button"type="submit" name="valider" value="Soumettre" />
          
       </form>

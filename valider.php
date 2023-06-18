@@ -1,4 +1,4 @@
-<?php 
+<?php /*
 
 include("connexionbd.php");
 $id=htmlspecialchars($_GET['id_evenement']);
@@ -10,4 +10,4 @@ $pdo->exec($sql);
 
 header("location:admin.php");
 
-?>
+*/?>

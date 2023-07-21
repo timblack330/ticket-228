@@ -1,0 +1,28 @@
+.page-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 60px 0 30px;
+}
+.footer-copyright {
+    color: #666;
+    padding: 40px 0;
+}
+
+
+.description {
+    left: 10%;
+    position: absolute;
+    top: 10%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+}
+.description h1 {
+    color: #6ab446;
+}
+.description p {
+    color: black;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+body {background-color: coral;} 

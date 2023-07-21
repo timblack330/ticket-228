@@ -43,131 +43,164 @@
       
 ?>
 <!DOCTYPE html>
-<html>
-   <head>
-<link rel="stylesheet" href="css/bootstrap.css">
-<script type="js/bootstrap.js"></script>
-      <meta charset="utf-8" />
-      <link rel="stylesheet" href="style.css"/>
-   </head>
-   <body >
-      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-       <a class="navbar-brand" href="#">
-        <img src="228-TICKET.png" width="180" height="30" class="d-inline-block align-top" alt="">
-       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> 
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-       <div class="navbar-nav">
-        <form class="form-inline">
-         <li class="nav-item nav-link px-3">
-            <input type="search" name="recherche" placeholder="Rechercher un évènement" />
-            <input type="submit" value="valider" class="button" /></form>
-        </form>
+<html lang="en">
+<head>
+  <title>Accueil</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+        <body>
+        <script src="jquery-3.5.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- Debut -->
+
+<!-- Navbar debut-->
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="Index.php">
+          <img src="logo4.png" width="300" height="80" alt="">
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
         </li>
-         <li class="nav-item nav-link px-3">
-            <a>
-             <?php 
-                if (empty($_SESSION["autoriser"])){
-                 echo("<form action='login.php'>
-                   <button type='submit'>Se connecter</button>
-                 </form><br>");}
-              ?>
-             </a>
-         </li>
-         <li class="nav-item nav-link px-3">
-             <a>
-             <?php 
-              if (empty($_SESSION["autoriser"])){
-               echo("<form action='inscription.php'>
-                 <button type='submit'>S'inscrire</button>
-               </form>");}
-   
-              ?>
-      
-             </a>
-      </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.php">Se connecter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="inscription.php">S'inscrire</a>
+        </li>
+      </ul>
+      <!--       <div class="d-flex">
+                <ul>
+                    <li><span class="social-icon social-facebook"><i class="fa fa-facebook"></i></span></li>
+                    <li><span class="social-icon social-google"><i class="fa fa-google"></i></span></li>
+                    <li><span class="social-icon social-linkedin"><i class="fa fa-linkedin"></i></span></li>
+                    <li><span class="social-icon social-instagram"><i class="fa fa-instagram"></i></span></li>
+                    <li><span class="social-icon social-twitter"><i class="fa fa-twitter"></i></span></li>
+                </ul>
+            </div> -->
+</nav>
+
+<!-- background debut 
+<div class="bg">
+  <img class="bg-img" src="Images\back_img.jpg" alt="">
+</div> -->
+<!-- biblio debut -->
+
+<main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+  <div class="container">
+    <div class="container">
+     <div class="description">
+       <h1>Ticket+</h1>
+       <p>Acheter plus qu'un ticket</p>
+       <div class="input-group">
+          <input type="search" class="form-control rounded" placeholder="Trouver un évènement" aria-label="Search"
+           aria-describedby="search-addon" />
+         <button type="button" class="btn btn-outline-primary">Valider</button>
+       </div>
+     </div>
+   </div>
+</div>
+</main>
+<!-- biblio fin -->
+<!-- Navbar fin-->
+<!-- Carousel debut-->
+<div class="row justify-content-center">
+   <div class="col-xl-6 text-center">
+      <h1 class="text-success">Les meilleurs evenements de Lome </h1>
+<div id="moncarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#moncarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#moncarousel" data-slide-to="1"></li>
+    <li data-target="#moncarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="/affiches/event1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/affiches/event2.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/affiches/event3.jpg" alt="Third slide">
     </div>
   </div>
-</nav>
-<div id="welcome">
-      <h2><?php echo $bienvenue?></h2></div>
-
-      
-      <div class="actions">
-         <br>
-         <br>
-         <!-- Write your comments here
-         <form method="$_GET">
-         <input type="search" name="recherche" placeholder="Rechercher un évènement" />
-         <input type="submit" value="valider" class="button" /></form>
-         -->
-         <div class="container">
-  
-         <div class="container">
-  <a>
-         <?php 
-   if (isset($_SESSION["autoriser"])){
-      if($_SESSION["autoriser"]=="oui"){
-         echo("<form action='deconnexion.php'>
-         <button type='submit'>Se déconnecter</button>
-       </form><br>");
-       echo("<form action='mes_reservations.php'>
-       <button type='submit'>Mes reservations</button>
-     </form><br>");}
-   }
-   if (isset($_SESSION["org"])){
-      if($_SESSION["org"]=="oui"){
-         echo("<form action='creation_event.php'>
-         <button type='submit'>Créer un évènement</button>
-       </form>");}
-      }
-   ?>
-</a>
-      <br></div>
-
-      <?php  
-      
-      
-      
-   
-      /*foreach ($donnees as  $values) {
-
-         $nom=str_replace("¬","'",$values['nom']);
-         if($values['adulte']=="oui"){$limite="Interdit aux moins de 18 ans";}
-         elseif($values['adulte']=="non"){$limite="Ouvert à tous";}
-         
-         echo"<div class='card'><br><table id='table1'>"; 
-          echo "<tr><td><span>" .$nom . "</span> par :".$values['createur'] . " ".$limite."</td></tr>";
-          echo '<tr><td><a href="evenement.php?id_evenement='.$values['id'].'"><div class="affiche"><img src="affiches/'.$values["id_affiche"].'"/></div></a></td></tr>';
-          
-          
-          echo "<td>Du " . $values['date_debut'] . " au " . $values['date_fin'] . " entre " . $values['heure_debut'] . " et ". $values['heure_fin'] . "</td>";
-          echo '<tr><td>Entrée :' . htmlspecialchars($values['prix']) . "FCFA <a class='button' href='reserver.php?id_evenement=" .$values['id'] . "'>Reserver une place</a></td></tr>";
-          echo "<tr><td><a class='button' href='".htmlspecialchars($values['localisation'])."'target='_blank'>Localisation</a>  <a class='button' href='evenement.php?id_evenement=" .htmlspecialchars($values['id']) . "'>Plus...</a>
-          </td></tr>";
-          echo "</tr>";
-          echo "</div></table>";
-      }
-
-      if(count($donnees)==0){
-         echo "<div class='msg'>Aucun Resultat<br>
-         <form>
- <input class='button' type = 'button' value = 'Retour'  onclick = 'history.back()'>
- </form>
-         </div>" ;
-       }*/
-      
-
-      ?>
-<script type="text/javascript">
-    function hidewelcome() {
-      document.getElementById("welcome").style.visibility = "hidden";
-    }
-    setTimeout("hidewelcome()", 10000); // aprés 10 sec
+  <a class="carousel-control-prev" href="#moncarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#moncarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+   </div>
+</div>
+<!-- Carousel fin-->
+<!-- P Choisir debut-->
+<h1 class="text-center text-success">Pourquoi choisir ticket+? </h1>
+<div class="row">
+   <div class="col-sm-4">
+  <div class="card">
+    <img class="card-img-top" src="/affiches/concert.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Un systeme simple et efficace</h5>
+      <p class="card-text">Ticket+ est simple et facile a utiliser et vous permet de retrouver ce que vous chercher en quelques clics</p>
+    </div>
+ </div>
+  </div>
+  <div class="col-sm-4">
+  <div class="card">
+    <img class="card-img-top" src="/affiches/fest.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Trouver des evenements qui vous conviennent</h5>
+      <p class="card-text">Nous vous permettons de trouver une grande variete d'evenenments selons vos preferences</p>
+    </div>
+ </div>
+  </div>
+  <div class="col-sm-4">
+  <div class="card">
+    <img class="card-img-top" src="/affiches/happy.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Toujours a jour</h5>
+      <p class="card-text">Nos catalogies sony regulierement mis a jour pour vous trouver les evenements les plus recents</p>
+    </div>
+ </div>
+  </div>
+</div>
+<!-- P choisir fin-->
+<!-- footer debut-->
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">Informations</h6>
+                <p><u><a class="condition" href="conditiong.php">Conditions Legales</a></u></p>
+                <p><u><a class="info" href="infog.php">Informations Generales</a></u></p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+            <p>Lome, TOGO
+            <br/>christ124587@live.fr
+            <br/>+228 90 00 29 18
+            <br/>+228 92 36 69 24</p>
+        </div>
+    </div>
+    <div class="footer-copyright text-center">© 2023 Copyright: Ticket+.tg</div>
+</footer>
+<!-- footer fin-->
+        
+    </body>
     
-   </script>
-
-   </body>
 </html>
